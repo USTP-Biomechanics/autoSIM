@@ -151,7 +151,7 @@ switch lower(jc_base_data.method)
             % HJC definition based Hara et al. (with LL in mm)
             H_ap_mm_l = 11 - 0.063 * LLLmm;
             H_v_mm_l = -9 - 0.078*LLLmm;
-            H_ml_mm_l = 8 + 0.086 * LLLmm * -1; %for left side * -1
+            H_ml_mm_l = (8 + 0.086 * LLLmm) * -1; %for left side * -1
 
             % Convert back to meters
             H_ap_l = H_ap_mm_l / 1000;
